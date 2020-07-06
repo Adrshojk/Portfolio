@@ -12,6 +12,17 @@ html{
 a{
     text-decoration: none;
 }
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+p{
+    color: wheat;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+}
 .container{
     min-height: 100vh;
     width: 100%;
@@ -93,7 +104,6 @@ a{
     color: wheat;
 }
 #hero .hero{
-    width: 1200px;
     margin: 0;
     padding: 0 50px;
     justify-content: flex-start;
@@ -111,6 +121,9 @@ a{
     margin: 0 auto;
     padding: 100px 0;
 }
+#service .service-top{
+    margin: 10px 20px;
+}
 #service .section-title{
     font-size: 4rem;
     font-weight: 300;
@@ -127,7 +140,54 @@ margin-top: 5px;
 line-height: 2.5rem;
 font-weight: 300;
 letter-spacing: 0.04rem;
+color: black;
+text-align: center;
 }
+#service .service-bottom{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+}
+#service .service-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 30px;
+    background-image: url(./img/279547.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#service .service-item::after{
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width: 100%;
+    background-color: black;
+    opacity: .4;
+    z-index: -1;
+}
+.service-item .icon{
+    width:80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+#service .service-item h2{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
  /* End of Service Section  */
 
 /* key frames  */
