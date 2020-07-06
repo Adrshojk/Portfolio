@@ -43,17 +43,18 @@ a{
     font-size: 4rem;
     position: relative;
     color:transparent;
-    animation: text-reveal 1s ease forwards ;
-    animation-delay: 1.5s;
+    animation: text-reveal .3s ease forwards ;
+    animation-delay: 1s;
 }
 #hero h1:nth-child(1){
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 }
 #hero h1:nth-child(2){
-    animation-delay: 2.5s;
+    animation-delay: 2s;
 }
 #hero h1:nth-child(3){
-    animation-delay: 3.5s;
+    animation:text-reveal-name .3s ease forwards;
+    animation-delay: 3s;
 }
 
 #hero h1 span{
@@ -63,16 +64,16 @@ a{
     height: 100%;
     width: 0;
     background-color: crimson;
-    animation: text-reveal-box 1s ease 1s;   
+    animation: text-reveal-box 1s ease .5s;   
 }
 #hero h1:nth-child(1) span{
-    animation-delay: 1s;
+    animation-delay: .5s;
 }
 #hero h1:nth-child(2) span{
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 #hero h1:nth-child(3) span{
-    animation-delay: 3s;
+    animation-delay: 2.5s;
 }
 #hero .cta{
     display: inline-block;
@@ -89,6 +90,12 @@ a{
 }
 #hero .cta:hover{
     color: wheat;
+}
+#hero .hero{
+    width: 1200px;
+    margin: 0;
+    padding: 0 50px;
+    justify-content: flex-start;
 }
 /* End of hero section  */
 
@@ -108,6 +115,12 @@ a{
 @keyframes text-reveal{
     100%{
         color:white;
+    }
+}
+@keyframes text-reveal-name{
+    100%{
+        color: crimson;
+        font-weight: bold;
     }
 }
 
