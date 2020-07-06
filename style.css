@@ -23,6 +23,14 @@ p {
   font-size: 1.2rem;
   line-height: 1.9rem;
 }
+.brand h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: wheat;
+}
+.brand h1 span {
+  color: crimson;
+}
 
 .container {
   min-height: 100vh;
@@ -194,7 +202,8 @@ p {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 0 0 100px;
+  text-align: center;
 }
 #project .project .project-header h1 {
   margin-bottom: 50px;
@@ -264,7 +273,8 @@ p {
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 0 20px;
+  padding-bottom: 120px;
 }
 #about .col-left {
   width: 250px;
@@ -320,6 +330,10 @@ p {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
+}
+#contact .section-title {
+  margin: 0;
 }
 #contact .contact-items {
   width: 80%;
@@ -330,7 +344,7 @@ p {
   text-align: center;
   border-radius: 10px;
   padding: 30px;
-  margin: 30px;
+  margin: 30px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -358,6 +372,47 @@ p {
 }
 
 /* End of Contact Section */
+
+/* Footer */
+#footer {
+  background-color: rgb(44, 90, 90);
+}
+#footer .footer {
+  min-height: 100px;
+  flex-direction: column;
+  padding: 50px;
+  padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#footer .footer h2 {
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  margin: 10px 0;
+}
+#footer .social-icon {
+  margin-bottom: 10px;
+  text-align: center;
+}
+#footer .social-item {
+  height: 50px;
+  width: 50px;
+}
+#footer .social-item img {
+  filter: grayscale(1);
+  transition: 0.3s ease-in;
+}
+#footer .social-item img:hover {
+  filter: grayscale(0);
+}
+#footer p {
+  font-size: 0.8rem;
+}
+
+/* End of Footer */
 
 /* key frames  */
 @keyframes text-reveal-box {
