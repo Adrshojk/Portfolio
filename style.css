@@ -139,6 +139,7 @@ p {
 }
 #service .service-top {
   margin: 10px 20px;
+  padding: 10px;
 }
 
 #service .service-top p {
@@ -337,14 +338,16 @@ p {
 }
 #contact .contact-items {
   width: 80%;
+  justify-content: center;
 }
 #contact .contact-item {
-  width: 80%;
+  width: 100%;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
   padding: 30px;
   margin: 30px auto;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -439,3 +442,97 @@ p {
 }
 
 /* end of key frames  */
+
+/* Media querry for tablet */
+@media only screen and (min-width: 768px) {
+  .cta {
+    font-size: 3.5rem;
+    padding: 20px 60px;
+  }
+  .section-title {
+    font-size: 6rem;
+  }
+  /* Hero  */
+  #hero h1 {
+    font-size: 7rem;
+  }
+  /* End of Hero  */
+  /* service section  */
+  #service .service-bottom .service-item {
+    flex-basis: 45%;
+    margin: 2.5%;
+  }
+  /* End of Service  */
+  /* Projects  */
+  #project .project .project-item {
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  #project .project .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  #project .all-project .project-info {
+    height: 100%;
+  }
+  #project .all-project .project-img {
+    height: 100%;
+  }
+  /* End ofProjects  */
+
+  /* About  */
+  #about .about {
+    flex-direction: row;
+  }
+  #about .col-left {
+    width: 600px;
+    height: 600px;
+    padding-left: 50px;
+  }
+  #about .col-left .about-img::after {
+    left: -45px;
+    top: 34px;
+    height: 98%;
+    width: 98%;
+  }
+  #about .col-right {
+    text-align: left;
+    padding: 30px;
+  }
+  #about .col-right h1 {
+    font-size: 7rem;
+  }
+  /* End of About  */
+
+  /* Contact  */
+  #contact .contact {
+    min-width: 20vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+  }
+  #contact .contact-items {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  #contact .contact-item {
+    margin: 5px;
+  }
+  /* End of Contact  */
+}
+
+/* End of Media querry for tablet */
+
+/* Media querry for desktop  */
+@media only screen and (min-width: 1000px) {
+  #service .service-bottom .service-item {
+    flex-basis: 22%;
+    margin: 1.5%;
+  }
+}
